@@ -2,7 +2,12 @@
 #include <winsock.h>
 
 /*
+Este projeto foi criado na IDE DevCpp projeto Win32, com adição da biblioteca
+
 "libwsock32.a"
+
+"Ws2_32.lib" no visual studio 
+
 */
 
 //Estruturas utilizadas
