@@ -3,6 +3,15 @@
 #include <iostream>
 #include <wininet.h>
 
+/*
+
+Este projeto foi criado na IDE DevCpp projeto Win32, com adição da biblioteca
+"libwininet.a"
+
+"Wininet.lib", se fosse usado o visual studio. 
+
+*/
+
 int __stdcall WinMain(HINSTANCE hinstance, HINSTANCE hInst, LPSTR l_str, int l_show)
 {
 	
