@@ -1,5 +1,9 @@
 #include <windows.h>
 
+/*
+Este projeto foi criado na IDE DevCpp projeto Win32, sem nenhuma adicição de biblioteca.
+*/
+
 int __stdcall WinMain(HINSTANCE hinstance, HINSTANCE hInst, LPSTR l_str, int l_int)
 {
 	
