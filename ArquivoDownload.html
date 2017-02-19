@@ -1,0 +1,31 @@
+<html>
+  <head>
+	Cabeçalho
+	 <title>
+	   Título
+	 </title>
+  </head>
+	<body background="_Fundo_.jpg">
+	   <div id="div1">Click para baixar</div>
+	   <input type="button" value="Baixar" onclick="Baixar('Arquivo.txt','Texto !')" 
+	   style="color:gray; height:3.35%; width:13.57%; margin-top:0px; margin-left:0px;">
+	</body>
+</html>
+
+<script language="JavaScript">
+//Função baixa um arquivo no navegador, pode ser usado para criar por exemplo um arquivo .bat
+//para executar algum comando.
+function Baixar(NomeDoArquivo,TextoDoArquivo)
+{
+  var element = document.createElement('a');//cria o elemento HTML especificado ou um HTMLUnknownElement
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' 
+  + encodeURIComponent(TextoDoArquivo));
+  element.setAttribute('download', NomeDoArquivo);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+  //Chama uma janela de texto concatenando as strings como parâmetro
+  alert("O arquivo" + NomeDoArquivo + "foi baixado com sucesso !");
+}
+</script>
