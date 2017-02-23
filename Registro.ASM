@@ -1,3 +1,5 @@
+;Exemplo usando compilador Flat Assembler
+
 format PE GUI 4.0
 
 include 'win32w.inc'
